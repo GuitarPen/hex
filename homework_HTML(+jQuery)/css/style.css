@@ -1,0 +1,352 @@
+/*加入border-box，使元素不會增加內距及邊框的寬度*/
+*{
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.clearfix {
+	clear: both /*與float搭配使用，清除浮動區塊*/
+}
+
+body{
+	background: #717171;
+	font-family:"微軟正黑體";
+}
+
+.wrap{
+	width: 1000px;
+	margin: 0 auto;
+	background: #fff;
+	box-shadow: 0px 0px 20px #3c3c3c;
+}
+
+/*link*/
+
+.link{
+	padding: 10px;
+	background: #f6f6f6;
+}
+
+.link ul{
+	float: right;
+}
+
+.link li{
+	float: left;
+	padding: 0 10px;
+}
+
+.link li a{
+	text-decoration: none;
+	font-size: 15px;
+}
+
+.link li a img{
+	margin-right: 5px;
+	/*清除圖片留白*/
+	float: left;
+}
+
+.facebook{
+	border-right: 2px solid #cccccc;
+}
+
+.facebook span{
+	color: #4460a0;
+}
+
+.facebook a:hover{
+	color: #4460a0;
+	text-decoration: underline;
+}
+
+.twitter span{
+	color: #1bb2ed;
+}
+
+.twitter a:hover{
+	color: #1bb2ed;
+	text-decoration: underline;
+}
+
+/*header*/
+
+.header h1{
+	float: left;
+	margin: 7px 20px;
+}
+
+.header h1 a{
+	display: block;
+	width: 170px;
+	height: 36px;
+	background-image: url(../images/logo.png);
+	background-repeat: no-repeat;
+	/*清除文字*/
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.header >ul{
+	float: right;
+}
+
+.header >ul li{
+	float: left;
+	position: relative;
+}
+
+.header ul a{
+	display: block;
+	text-decoration: none;
+	color: #00cc99;
+	padding: 17px 10px 15px 10px;
+	background: #fff;
+}
+
+.header >ul>li>a:hover,.header >ul>li>a.active{
+	border-bottom: 2px solid #00cc99;
+}
+
+.dropdown-open{
+	display: none;
+	position: absolute;
+	z-index: 999;
+}
+
+.dropdown-open a{
+	width: 168px;
+	text-align: center;
+	font-size: 14px;
+	transition: all 0.3s;
+}
+
+.dropdown-open a:hover{
+	background: #00cc99;
+	color: #fff;
+}
+
+/*banner*/
+
+.banner{
+	position: relative;
+}
+
+.banner h2{
+	font-size: 36px;
+	color: #fff;
+	line-height: 48px;
+	position: absolute;
+	padding: 32px 60px;
+	top: 94px;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	background: rgba(0,0,0,0.3);
+}
+
+.nivoSlider{
+	box-shadow: none !important;
+}
+
+/*content*/
+
+.content{
+	padding: 10px 0px 10px 0px;
+}
+
+.content ul{
+	margin: 0 auto;
+}
+
+.content li{
+	float: left;
+	width: 300px;
+	padding: 20px;
+	margin: 15px;
+	box-shadow: 0px 0px 10px #d0d0d0;
+	border-radius: 5px;
+}
+
+.content-img{
+	height: 150px;
+	line-height: 150px;
+	text-align: center;	
+}
+
+.content-img img{
+	vertical-align: middle;
+}
+
+.content h3{
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.content p{
+	font-size: 15px;
+	line-height: 22px;
+	/*讓文字齊行*/
+	text-align: justify;
+}
+
+/*list*/
+
+.list{
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 60px;
+}
+
+.list table{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.list h2{
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	padding: 30px;
+}
+
+.list table th,.list table td{
+	border-top: solid #d0d0d0 1px;
+	border-bottom: solid #d0d0d0 1px;
+	width: 25%;
+	padding: 10px 20px;
+	text-align: left;
+}
+
+.list table th{
+	background: #f0f0f0;
+	font-weight: bold;
+}
+
+.green{
+	color: #00cc99;
+}
+
+/*contact*/
+
+.contact{
+	background: #00684e;
+	padding: 20px 20px 30px 20px;
+}
+
+.contact h2{
+	color: #fff;
+	font-size: 24px;
+	line-height: 36px;
+	text-align: center;
+	padding: 10px 0 30px 0;
+}
+
+.contact form textarea{
+	width: 460px;
+	height: 420px;
+	float: left;
+}
+
+.form-items{
+	float: right;
+}
+
+.form-item-title{
+	display: block;
+	color: #fff;
+	font-size: 15px;
+	margin-bottom: 5px;
+}
+
+.form-item{
+	color: #fff;
+	font-size: 15px;
+	margin-right: 10px;
+}
+
+.form-item{
+	color: #fff;
+	font-size: 15px;
+	margin-right: 10px;
+}
+
+.form-items input, .form-items select{
+	margin-bottom: 15px;
+}
+
+.form-items input[type=text]{
+	padding: 8px;
+	width: 460px;
+	border-radius: 5px; /*圓角*/
+	border-style: none; /*去掉內陰影*/
+}
+
+.form-items select{
+	padding: 5px;
+	border-radius: 5px;
+	border-style: none;
+}
+
+.contact input[type=submit]{
+	background: #00cc99;
+	border-radius: 5px;
+	border-style: none;
+	float: right;
+}
+
+.contact input[type=submit]:hover{
+	background: #003326;
+}
+
+textarea:focus, input:focus, select:focus{
+	outline: none;/*移除藍色點擊框*/
+}
+
+/*footer*/
+
+.footer{
+	padding: 30px;
+}
+
+.footer img{
+	float: left;
+}
+
+.info{
+	float: right;
+}
+
+.info p{
+	display: block;
+	margin-bottom: 12px;
+}
+
+.info span,.info a{
+	text-decoration: none;
+	color: #e12d80;
+}
+
+.info a:hover{
+	text-decoration: underline;
+}
+
+/*top*/
+
+.top a{
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	font-size: 50px;
+	color: #00684e;
+	background: #f6f6f6;
+	width: 70px;
+	height: 70px;
+	border-radius: 20%;
+	text-align: center;
+	line-height: 65px;
+}

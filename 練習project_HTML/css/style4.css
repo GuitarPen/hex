@@ -1,0 +1,38 @@
+a{
+	display: block;
+	height: 50px;
+}
+
+li{
+	display: inline;
+}
+
+.box{
+	width: 260px;
+	height: 260px;
+	/*background-image: url(../img/logo.png);
+	background-repeat: no-repeat;
+	background-position: right 20px bottom 20px; */
+	border: solid 1px;
+	padding: 20px;
+	/*一行寫法*/
+	background: url(../img/logo.png) no-repeat right 20px bottom 20px;
+}
+
+.box2{
+	width: 1000px;
+	background-image: url(../img/bg.png);
+	background-color: #009872;
+	background-repeat: repeat-x;
+}
+
+.box2 h2{
+	color: #fff;
+	font-size: 36px;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.box2 p{
+	padding: 0 40px 40px 40px;
+}

@@ -1,0 +1,185 @@
+/*加入border-box，使元素不會增加內距及邊框的寬度*/
+*{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.clearfix {
+  clear: both /*與float搭配使用，清除浮動區塊*/
+}
+
+body{
+	background: #717171;
+	font-family:"微軟正黑體";
+}
+
+.wrap{
+	max-width: 1000px;
+	margin: 0 auto;
+	background: #fff;
+	box-shadow: 0px 0px 20px #3c3c3c;
+}
+
+/*link*/
+
+.link{
+	padding: 10px;
+	background: #f6f6f6;
+}
+
+.link ul{
+	float: right;
+}
+
+.link li{
+	float: left;
+	padding: 0 10px;
+}
+
+.link li a{
+	text-decoration: none;
+	font-size: 15px;
+}
+
+.link li a img{
+	margin-right: 5px;
+	/*清除圖片留白*/
+	float: left;
+}
+
+.facebook{
+	border-right: 2px solid #cccccc;
+}
+
+.facebook span{
+	color: #4460a0;
+}
+
+.facebook a:hover{
+	color: #4460a0;
+	text-decoration: underline;
+}
+
+.twitter span{
+	color: #1bb2ed;
+}
+
+.twitter a:hover{
+	color: #1bb2ed;
+	text-decoration: underline;
+}
+
+/*header*/
+
+.header{
+	box-shadow: 0px 7px 5px -5px #e0e0e0;
+}
+
+.header h1{
+	float: left;
+	margin: 7px 20px;
+}
+
+.header h1 a{
+	display: block;
+	width: 170px;
+	height: 36px;
+	background-image: url(../img/logo.png);
+	background-repeat: no-repeat;
+	/*清除文字*/
+	text-indent: 101%;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.header ul{
+	float: right;
+}
+
+.header ul li{
+	float: left;
+}
+
+.header ul li a{
+	display: block;
+	text-decoration: none;
+	color: #00cc99;
+	padding: 17px 10px;
+	border-bottom: 2px solid transparent;
+}
+ 
+.header ul li a:hover{
+	border-bottom: 2px solid #00cc99;
+}
+
+@media(max-width:767px){
+	.header h1{
+		float: none;
+	}
+	.header h1 a{
+		margin: 7px auto;
+	}
+	.header ul{
+		float: none;
+	}
+	.header ul li{
+		width: 50%;
+	}
+	.header ul li a{
+		width: 100px;
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+
+/*content*/
+
+.content{
+	padding: 10px 0px;
+}
+
+.content ul{
+	margin: 0 auto;
+}
+
+.content li{
+	float: left;
+	width: 31.33333%;
+	padding: 20px;
+	margin: 1%;
+	box-shadow: 0px 0px 10px #d0d0d0;
+	border-radius: 5px;
+}
+
+.content-img{
+	height: 150px;
+	line-height: 150px;
+	text-align: center;	
+}
+
+.content-img img{
+	vertical-align: middle;
+}
+
+.content h3{
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.content p{
+	font-size: 15px;
+	line-height: 22px;
+	/*讓文字齊行*/
+	text-align: justify;
+}
+
+@media(max-width:767px){
+	.content li{
+		float: none;
+		width: 95%;
+		margin: 1% auto;
+	}
+}

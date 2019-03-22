@@ -1,0 +1,42 @@
+body{
+	font-family: 微軟正黑體,verdana;
+	font-size: 16px;
+}
+
+h1{
+	color: blue;
+}
+
+p{
+	text-indent: 32px;
+}
+
+a{
+	color: red;
+}
+
+a:hover{
+	color: blue;
+}
+
+h2{
+	border-left: 5px solid red;
+	border-bottom: 5px solid red;
+}
+
+ol,ul{
+	line-height: 1.5;
+}
+
+
+.font-style{
+	text-decoration:line-through;
+}
+
+img{
+	border: 5px solid grey;
+}
+
+img:hover{
+	border: 5px solid pink;
+}

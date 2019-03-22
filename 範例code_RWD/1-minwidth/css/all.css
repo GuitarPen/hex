@@ -1,0 +1,16 @@
+/*先寫手機版型*/
+.title{
+  color: red;
+}
+.content{
+  color: black;
+}
+/*在 375px 以上時變更樣式*/
+@media(min-width:376px){
+  .title{
+    color: blue;
+  }
+  .content{
+    font-size: 30px;
+  }
+}
