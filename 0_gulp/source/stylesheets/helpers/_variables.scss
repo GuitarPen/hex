@@ -138,7 +138,10 @@ $spacers: map-merge(
     2: ($spacer * .5),
     3: $spacer,
     4: ($spacer * 1.5),
-    5: ($spacer * 3)
+    5: ($spacer * 3),
+    6: ($spacer * 3.5),
+    7: ($spacer * 4.5),
+    9: ($spacer * 6.5),
   ),
   $spacers
 );
@@ -170,7 +173,7 @@ $body-color:                $gray-900 !default;
 //
 // Style anchor elements.
 
-$link-color:                              #3F5D45; //theme-color("primary") !default;
+$link-color:                              theme-color("primary") !default;
 $link-decoration:                         none !default;
 $link-hover-color:                        darken($link-color, 15%) !default;
 $link-hover-decoration:                   underline !default;
@@ -233,9 +236,9 @@ $line-height-sm:              1.5 !default;
 $border-width:                1px !default;
 $border-color:                $gray-300 !default;
 
-$border-radius:               .25rem !default;
-$border-radius-lg:            .3rem !default;
-$border-radius-sm:            .2rem !default;
+$border-radius:               0px; //.25rem !default;
+$border-radius-lg:            0px; //.3rem !default;
+$border-radius-sm:            0px; //.2rem !default;
 
 $rounded-pill:                50rem !default;
 
