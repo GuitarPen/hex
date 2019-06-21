@@ -22,8 +22,10 @@
       <h1 class="navbar-brand mb-0">
         <a href="#" class="text-hide logo">Sweetaste</a>
       </h1>
-      <a class="nav-link d-flex align-items-center order-md-1" href="#">
-        <i class="fas fa-shopping-cart"></i>
+      <a class="nav-link d-flex align-items-center order-md-1" href="carts.html">
+        <i class="fas fa-shopping-cart">
+          <p class="text-hide mb-0">購物車</p>
+        </i>
       </a>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
@@ -40,6 +42,7 @@
       </div>
     </div>
   </nav>
+  <!-- 內容開始 -->
   <div class="container px-0 px-md-3">
     <header class="header">
       <div class="header-image bg-cover"
@@ -145,9 +148,11 @@
           style="background-image: url(https://images.unsplash.com/photo-1534073737927-85f1ebff1f5d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1204e5551548223af82981f0025984ef&auto=format&fit=crop&w=634&q=80)">
           <div class="item-tag">本日精選</div>
           <div class="heart">
-            <a href="#">
-              <i class="far fa-heart"></i>
-            </a>
+            <label class="heart-check">
+              <input type="checkbox" class="heart-checkbox">
+              <i class="fas fa-heart heart-show"></i>
+              <i class="far fa-heart heart-hidden"></i>
+            </label>
           </div>
         </div>
         <div class="item-body d-flex text-center h5">
@@ -163,9 +168,11 @@
           style="background-image: url(https://images.unsplash.com/photo-1525059337994-6f2a1311b4d4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7ce5bbf66bdb4ed3b6965f0b3618aa43&auto=format&fit=crop&w=654&q=80)">
           <div class="item-tag">本日精選</div>
           <div class="heart">
-            <a href="#">
-              <i class="far fa-heart"></i>
-            </a>
+            <label class="heart-check">
+              <input type="checkbox" class="heart-checkbox">
+              <i class="fas fa-heart heart-show"></i>
+              <i class="far fa-heart heart-hidden"></i>
+            </label>
           </div>
         </div>
         <div class="item-body d-flex text-center h5">
@@ -181,9 +188,11 @@
           style="background-image: url(https://images.unsplash.com/photo-1490474504059-bf2db5ab2348?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0cad6d3de8adbdf6298d4ca5d094f8c6&auto=format&fit=crop&w=1350&q=80)">
           <div class="item-tag">本日精選</div>
           <div class="heart">
-            <a href="#">
-              <i class="far fa-heart"></i>
-            </a>
+            <label class="heart-check">
+              <input type="checkbox" class="heart-checkbox">
+              <i class="fas fa-heart heart-show"></i>
+              <i class="far fa-heart heart-hidden"></i>
+            </label>
           </div>
         </div>
         <div class="item-body d-flex text-center h5">
@@ -196,6 +205,8 @@
       </div>
     </div>
   </section>
+  <!-- 內容結束 -->
+  <!-- footer -->
   <section class="py-3 bg-primary">
     <div class="container">
       <div class="row justify-content-center">
@@ -208,7 +219,7 @@
           <div class="input-group input-icon">
             <input type="text" class="form-control input-square" placeholder="" aria-describedby="button-addon2">
             <div class="input-group-append">
-              <button class="btn btn-accent" type="button" id="button-addon2">
+              <button class="btn btn-accent" type="button" style="width:64px" id="button-addon2">
                 <i class="fas fa-arrow-right"></i>
               </button>
             </div>
