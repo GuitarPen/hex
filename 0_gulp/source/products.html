@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sweetaste</title>
+  <link rel="icon" href="images/favicon_48.ico">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="/stylesheets/all.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon text-hide">menu</span>
+      </button>
+      <h1 class="navbar-brand mb-0">
+        <a href="index.html" class="text-hide logo">Sweetaste</a>
+      </h1>
+      <a class="nav-link d-flex align-items-center order-md-1" href="carts.html">
+        <i class="fas fa-shopping-cart">
+          <p class="text-hide mb-0">購物車</p>
+        </i>
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item text-center">
+            <a class="nav-link" href="index.html">首頁</a>
+          </li>
+          <li class="nav-item active text-center">
+            <a class="nav-link" href="#">甜點 <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="nav-link" href="register.html">登入</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- 內容開始 -->
+  <div class="container px-0 px-md-3">
+    <header class="header">
+      <div class="header-image bg-cover"
+        style="background-image: url(https://images.unsplash.com/photo-1512484457149-266d165a4eca?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=786581a33fd6c9343735655439ce2e5a&auto=format&fit=crop&w=1380&q=80)">
+      </div>
+      <img class="header-img" src="images/lg-想吃甜點是不需要理由的.svg" style="width:90px;" alt="想吃甜點是不需要理由的">
+    </header>
+  </div>
+  <section class="my-7 ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="sticky-top">
+            <h4 class="text-white text-center bg-primary mb-0 py-3">甜點類別</h4>
+            <div class="list-group h4 text-center" id="myList" role="tablist">
+              <a class="list-group-item list-group-item-action active" data-toggle="list" href="#all">所有甜點</a>
+              <a class="list-group-item list-group-item-action" data-toggle="list" href="#today">本日精選</a>
+              <a class="list-group-item list-group-item-action" data-toggle="list" href="#populor">人氣推薦</a>
+              <a class="list-group-item list-group-item-action" data-toggle="list" href="#news">新品上市</a>
+              <a class="list-group-item list-group-item-action disabled" data-toggle="list" href="#outPrint">絕版品</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="tab-content">
+            <div class="tab-pane active" id="all">
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="item-images bg-cover "
+                    style="background-image: url(https://images.unsplash.com/photo-1534073737927-85f1ebff1f5d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1204e5551548223af82981f0025984ef&auto=format&fit=crop&w=634&q=80)">
+                    <div class="item-tag">本日精選</div>
+                    <div class="heart">
+                      <label class="heart-check">
+                        <input type="checkbox" class="heart-checkbox">
+                        <i class="fas fa-heart heart-show"></i>
+                        <i class="far fa-heart heart-hidden"></i>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="item-body d-flex text-center h5">
+                    <div class="col item-word right-border">焦糖馬卡龍</div>
+                    <div class="col item-word">
+                      <strong>NT$ 450</strong>
+                    </div>
+                  </div>
+                  <a class="item-footer text-center h5" href="#">加入購物車</a>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="item-images bg-cover "
+                    style="background-image: url(https://images.unsplash.com/photo-1525059337994-6f2a1311b4d4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7ce5bbf66bdb4ed3b6965f0b3618aa43&auto=format&fit=crop&w=654&q=80)">
+                    <div class="item-tag">本日精選</div>
+                    <div class="heart">
+                      <label class="heart-check">
+                        <input type="checkbox" class="heart-checkbox">
+                        <i class="fas fa-heart heart-show"></i>
+                        <i class="far fa-heart heart-hidden"></i>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="item-body d-flex text-center h5">
+                    <div class="col item-word right-border">牛奶尬圈圈</div>
+                    <div class="col item-word">
+                      <strong>NT$ 450</strong>
+                    </div>
+                  </div>
+                  <a class="item-footer text-center h5" href="#">加入購物車</a>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="item-images bg-cover "
+                    style="background-image: url(https://images.unsplash.com/photo-1490474504059-bf2db5ab2348?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0cad6d3de8adbdf6298d4ca5d094f8c6&auto=format&fit=crop&w=1350&q=80)">
+                    <div class="item-tag">本日精選</div>
+                    <div class="heart">
+                      <label class="heart-check">
+                        <input type="checkbox" class="heart-checkbox">
+                        <i class="fas fa-heart heart-show"></i>
+                        <i class="far fa-heart heart-hidden"></i>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="item-body d-flex text-center h5">
+                    <div class="col item-word right-border">保證不烙賽</div>
+                    <div class="col item-word">
+                      <strong>NT$ 450</strong>
+                    </div>
+                  </div>
+                  <a class="item-footer text-center h5" href="#">加入購物車</a>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="item-images bg-cover "
+                    style="background-image: url(https://images.unsplash.com/photo-1508737804141-4c3b688e2546?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1833&q=80)">
+                    <div class="heart">
+                      <label class="heart-check">
+                        <input type="checkbox" class="heart-checkbox">
+                        <i class="fas fa-heart heart-show"></i>
+                        <i class="far fa-heart heart-hidden"></i>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="item-body d-flex text-center h5">
+                    <div class="col item-word right-border">保證不烙賽</div>
+                    <div class="col item-word">
+                      <strong>NT$ 450</strong>
+                    </div>
+                  </div>
+                  <a class="item-footer text-center h5" href="#">加入購物車</a>
+                </div>
+              </div>
+              <nav class="mt-4" aria-label="Page navigation">
+                <ul class="pagination pagination-lg justify-content-center">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="tab-pane mb-8" id="today">
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="item-images bg-cover "
+                    style="background-image: url(https://images.unsplash.com/photo-1534073737927-85f1ebff1f5d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1204e5551548223af82981f0025984ef&auto=format&fit=crop&w=634&q=80)">
+                    <div class="item-tag">本日精選</div>
+                    <div class="heart">
+                      <label class="heart-check">
+                        <input type="checkbox" class="heart-checkbox">
+                        <i class="fas fa-heart heart-show"></i>
+                        <i class="far fa-heart heart-hidden"></i>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="item-body d-flex text-center h5">
+                    <div class="col item-word right-border">焦糖馬卡龍</div>
+                    <div class="col item-word">
+                      <strong>NT$ 450</strong>
+                    </div>
+                  </div>
+                  <a class="item-footer text-center h5" href="#">加入購物車</a>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="item-images bg-cover "
+                    style="background-image: url(https://images.unsplash.com/photo-1525059337994-6f2a1311b4d4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7ce5bbf66bdb4ed3b6965f0b3618aa43&auto=format&fit=crop&w=654&q=80)">
+                    <div class="item-tag">本日精選</div>
+                    <div class="heart">
+                      <label class="heart-check">
+                        <input type="checkbox" class="heart-checkbox">
+                        <i class="fas fa-heart heart-show"></i>
+                        <i class="far fa-heart heart-hidden"></i>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="item-body d-flex text-center h5">
+                    <div class="col item-word right-border">牛奶尬圈圈</div>
+                    <div class="col item-word">
+                      <strong>NT$ 450</strong>
+                    </div>
+                  </div>
+                  <a class="item-footer text-center h5" href="#">加入購物車</a>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="item-images bg-cover "
+                    style="background-image: url(https://images.unsplash.com/photo-1490474504059-bf2db5ab2348?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0cad6d3de8adbdf6298d4ca5d094f8c6&auto=format&fit=crop&w=1350&q=80)">
+                    <div class="item-tag">本日精選</div>
+                    <div class="heart">
+                      <label class="heart-check">
+                        <input type="checkbox" class="heart-checkbox">
+                        <i class="fas fa-heart heart-show"></i>
+                        <i class="far fa-heart heart-hidden"></i>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="item-body d-flex text-center h5">
+                    <div class="col item-word right-border">保證不烙賽</div>
+                    <div class="col item-word">
+                      <strong>NT$ 450</strong>
+                    </div>
+                  </div>
+                  <a class="item-footer text-center h5" href="#">加入購物車</a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="populor">
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="item-images bg-cover "
+                    style="background-image: url(https://images.unsplash.com/photo-1508737804141-4c3b688e2546?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1833&q=80)">
+                    <div class="heart">
+                      <label class="heart-check">
+                        <input type="checkbox" class="heart-checkbox">
+                        <i class="fas fa-heart heart-show"></i>
+                        <i class="far fa-heart heart-hidden"></i>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="item-body d-flex text-center h5">
+                    <div class="col item-word right-border">保證不烙賽</div>
+                    <div class="col item-word">
+                      <strong>NT$ 450</strong>
+                    </div>
+                  </div>
+                  <a class="item-footer text-center h5" href="#">加入購物車</a>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="item-images bg-cover "
+                    style="background-image: url(https://images.unsplash.com/photo-1504473089979-b1c4993a9653?ixlib=rb-1.2.1&auto=format&fit=crop&w=1834&q=80)">
+                    <div class="heart">
+                      <label class="heart-check">
+                        <input type="checkbox" class="heart-checkbox">
+                        <i class="fas fa-heart heart-show"></i>
+                        <i class="far fa-heart heart-hidden"></i>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="item-body d-flex text-center h5">
+                    <div class="col item-word right-border">籃莓好滋味</div>
+                    <div class="col item-word">
+                      <strong>NT$ 450</strong>
+                    </div>
+                  </div>
+                  <a class="item-footer text-center h5" href="#">加入購物車</a>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="item-images bg-cover "
+                    style="background-image: url(https://images.unsplash.com/photo-1503647869191-8eb843e92c0e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1834&q=80)">
+                    <div class="heart">
+                      <label class="heart-check">
+                        <input type="checkbox" class="heart-checkbox">
+                        <i class="fas fa-heart heart-show"></i>
+                        <i class="far fa-heart heart-hidden"></i>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="item-body d-flex text-center h5">
+                    <div class="col item-word right-border">可頌甜心</div>
+                    <div class="col item-word">
+                      <strong>NT$ 450</strong>
+                    </div>
+                  </div>
+                  <a class="item-footer text-center h5" href="#">加入購物車</a>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="item-images bg-cover "
+                    style="background-image: url(https://images.unsplash.com/photo-1455853659719-4b521eebc76d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80)">
+                    <div class="heart">
+                      <label class="heart-check">
+                        <input type="checkbox" class="heart-checkbox">
+                        <i class="fas fa-heart heart-show"></i>
+                        <i class="far fa-heart heart-hidden"></i>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="item-body d-flex text-center h5">
+                    <div class="col item-word right-border">水果鬆餅</div>
+                    <div class="col item-word">
+                      <strong>NT$ 450</strong>
+                    </div>
+                  </div>
+                  <a class="item-footer text-center h5" href="#">加入購物車</a>
+                </div>
+              </div>
+              <nav class="mt-4" aria-label="Page navigation">
+                <ul class="pagination pagination-lg justify-content-center">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="tab-pane mb-8" id="news">
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                  <div class="item-images bg-cover "
+                    style="background-image: url(https://images.unsplash.com/photo-1474045326708-cdc78c2487cb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600&q=80)">
+                    <div class="heart">
+                      <label class="heart-check">
+                        <input type="checkbox" class="heart-checkbox">
+                        <i class="fas fa-heart heart-show"></i>
+                        <i class="far fa-heart heart-hidden"></i>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="item-body d-flex text-center h5">
+                    <div class="col item-word right-border">檸檬焦糖</div>
+                    <div class="col item-word">
+                      <strong>NT$ 450</strong>
+                    </div>
+                  </div>
+                  <a class="item-footer text-center h5" href="#">加入購物車</a>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="item-images bg-cover "
+                    style="background-image: url(https://images.unsplash.com/photo-1515164664657-6ba669e028f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1841&q=80)">
+                    <div class="heart">
+                      <label class="heart-check">
+                        <input type="checkbox" class="heart-checkbox">
+                        <i class="fas fa-heart heart-show"></i>
+                        <i class="far fa-heart heart-hidden"></i>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="item-body d-flex text-center h5">
+                    <div class="col item-word right-border">迷你馬卡龍</div>
+                    <div class="col item-word">
+                      <strong>NT$ 450</strong>
+                    </div>
+                  </div>
+                  <a class="item-footer text-center h5" href="#">加入購物車</a>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <div class="item-images bg-cover "
+                    style="background-image: url(https://images.unsplash.com/photo-1468218620578-e8d78dcda7b1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80)">
+                    <div class="heart">
+                      <label class="heart-check">
+                        <input type="checkbox" class="heart-checkbox">
+                        <i class="fas fa-heart heart-show"></i>
+                        <i class="far fa-heart heart-hidden"></i>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="item-body d-flex text-center h5">
+                    <div class="col item-word right-border">莓果塔</div>
+                    <div class="col item-word">
+                      <strong>NT$ 450</strong>
+                    </div>
+                  </div>
+                  <a class="item-footer text-center h5" href="#">加入購物車</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 內容結束 -->
+  <!-- footer -->
+  <section class="py-3 bg-primary">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div
+          class="col-lg-5 col-md-6 d-flex align-items-center justify-content-center justify-content-md-start mb-4 mb-md-0">
+          <img src="images/logo-light.svg" style="width:40px; height:40px" alt="">
+          <span class="text-white h4 mb-0 mx-3">訂閱你我的甜蜜郵件</span>
+        </div>
+        <div class="col-lg-5 col-md-6">
+          <div class="input-group input-icon">
+            <input type="text" class="form-control input-square" placeholder="" aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-accent" type="button" style="width:64px" id="button-addon2">
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="py-4 bg-primary-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6 d-flex flex-column justify-content-between">
+          <div>
+            <img src="images/logotype-lg-dark.svg" style="width:172px;" alt="sweetaste">
+          </div>
+          <ul class="footer-contact mt-5 mb-0">
+            <li>07-1234-5678</li>
+            <li>sweetaste@email.com</li>
+            <li>800 高雄市新興區幸福路 520 號</li>
+          </ul>
+        </div>
+        <div class="col-lg-5 col-md-6 text-right d-none d-md-block">
+          <img src="images/sm-今天是個吃甜點的好日子.svg" style="width:60px;" alt="">
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6 mt-4 d-flex">
+          <a href="#" class="mr-1">
+            <img src="images/ic-line@.svg" class="d-block" style="width:32px;" alt="line">
+          </a>
+          <a href="#" class="mr-1">
+            <img src="images/ic-facebook.svg" class="d-block" style="width:32px;" alt="facebook">
+          </a>
+        </div>
+        <div class="col-lg-5 col-md-6 mt-4 text-md-right">
+          <span>© 2018 Sweetaste* All Rights Reserved</span>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="/javascripts/vendor.js"></script>
+</body>
+
+</html>
